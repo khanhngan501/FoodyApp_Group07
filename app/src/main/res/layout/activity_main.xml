@@ -8,32 +8,52 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/signIn_btn"
         android:layout_width="320dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="404dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="350dp"
         android:background="#80ffffff"
         android:text="Sign in"
         android:textColor="#560E0E"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:textStyle="bold" />
 
     <Button
+        android:id="@+id/skip_btn"
         android:layout_width="320dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="496dp"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
+        android:layout_height="62dp"
+        android:layout_marginTop="28dp"
 
         android:background="@drawable/signup_btn_welcome"
 
         android:text="skip"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/signIn_btn" />
+
+    <TextView
+        android:id="@+id/txt_signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:singleLine="false"
+        android:text="@string/sign_up_now"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:guidelineUseRtl="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skip_btn"
+        tools:textStyle="bold" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

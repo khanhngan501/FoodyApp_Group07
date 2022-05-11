@@ -2,4 +2,8 @@
     <string name="app_name">FoodyApp_Group07</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sign_up_now"> Don\'t have an account? <u>SIGN UP NOW</u></string>
+
+    <string name="policy">I agree to the <u>Temp &amp; Conditions and Privacy Policy</u></string>
 </resources>

@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.121" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.152" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/drawable/signup_btn_welcome.xml" value="0.165" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/drawable/signup_button_welcome.xml" value="0.165" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/font/fonts.xml" value="0.28020833333333334" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/activity_main.xml" value="0.21784420289855072" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/fragment_sign_in.xml" value="0.22916666666666666" />
+        <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/sign_up_page.xml" value="0.17281420765027322" />
       </map>
     </option>
   </component>

@@ -4,7 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_1"
+    android:background="@drawable/welcome_background"
     tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="404dp"
+        android:background="#80ffffff"
+        android:text="Sign in"
+        android:textColor="#560E0E"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textStyle="bold" />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="496dp"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+
+        android:background="@drawable/signup_btn_welcome"
+
+        android:text="skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

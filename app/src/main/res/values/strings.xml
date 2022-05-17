@@ -6,4 +6,7 @@
     <string name="sign_up_now"> Don\'t have an account? <u>SIGN UP NOW</u></string>
 
     <string name="policy">I agree to the <u>Temp &amp; Conditions and Privacy Policy</u></string>
+    <string name="menu">menu</string>
+    <string name="ifood">iFood</string>
+    <string name="fast_safe_and_convenient">fast, safe and convenient</string>
 </resources>

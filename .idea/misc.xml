@@ -11,15 +11,19 @@
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/drawable/signup_btn_welcome.xml" value="0.165" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/drawable/signup_button_welcome.xml" value="0.165" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/font/fonts.xml" value="0.28020833333333334" />
+        <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/activity_main.xml" value="0.21784420289855072" />
+        <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/foodyitems.xml" value="0.4" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/fragment_sign_in.xml" value="0.22916666666666666" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/home_activity.xml" value="0.22916666666666666" />
+        <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/recycle_food_items.xml" value="0.159375" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/sign_up_activity.xml" value="0.2" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/sign_up_page.xml" value="0.17281420765027322" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

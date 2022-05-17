@@ -3,8 +3,8 @@
     <stroke
         android:width="2dp"
         android:color="#B4ABAB"
-        android:dashGap="10dp"
-        android:dashWidth="8dp"
+        android:dashGap="5dp"
+        android:dashWidth="5dp"
         />
 
     <solid android:color="@color/white"/>

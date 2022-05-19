@@ -4,14 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
-    ListView listViewFoodList;
     private RecyclerView recyclerViewStore;
     private RecyclerView recyclerView_Vertical;
 
@@ -31,11 +32,27 @@ public class HomeActivity extends AppCompatActivity {
         recyclerViewStore.setHasFixedSize(true);
         recyclerViewStore.setAdapter(new StoreItemsAdapterHorizontal(this, stores));
 
+        recyclerViewStore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, StoreDetailActivity.class);
+                startActivity(intent);
+            }
+        });
+
         recyclerView_Vertical = (RecyclerView) findViewById(R.id.recyclerViewStore_Vertical);
         LinearLayoutManager layoutManagerVertical = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerView_Vertical.setLayoutManager(layoutManagerVertical);
         recyclerView_Vertical.setHasFixedSize(true);
         recyclerView_Vertical.setAdapter(new StoreItemsAdapterVertical(this, stores));
+
+        recyclerView_Vertical.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, StoreDetailActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

@@ -43,8 +43,7 @@ dependencies {
 
     implementation "androidx.recyclerview:recyclerview:1.3.0-alpha02"
 
-//    implementation 'com.androidx.support:design:28.0.0'
-//    implementation 'com.androidx.support:recyclerview-v7:26.1.0'
-//    implementation 'com.androidx.support:design:26.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
 
 }

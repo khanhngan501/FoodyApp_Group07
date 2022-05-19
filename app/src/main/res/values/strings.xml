@@ -9,4 +9,6 @@
     <string name="menu">menu</string>
     <string name="ifood">iFood</string>
     <string name="fast_safe_and_convenient">fast, safe and convenient</string>
+    <string name="normal_price"><strike>47.000đ</strike></string>
+    <string name="sale_price">35.000đ</string>
 </resources>

@@ -1,7 +1,6 @@
 package hcmute.edu.vn.nhom07.foodyapp_group07;
 
 import android.content.Context;
-import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,14 +10,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.w3c.dom.Text;
-
 import java.util.List;
 
-public class StoreItemsAdapterHorizontal extends RecyclerView.Adapter<StoreItemsAdapterHorizontal.DataViewHolder>{
+public class StoreItemsAdapterHorizontal extends RecyclerView.Adapter<StoreItemsAdapterHorizontal.DataViewHolder> {
 
     private List<StoreItems> storeItems;
     private Context context;
+    private StoreItemClickListener storeItemClickListener;
 
     public StoreItemsAdapterHorizontal(Context context, List<StoreItems> storeItems) {
         this.storeItems = storeItems;
@@ -31,6 +29,7 @@ public class StoreItemsAdapterHorizontal extends RecyclerView.Adapter<StoreItems
         View itemViews;
         itemViews = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_food_items_horizontal, parent, false);
         return new StoreItemsAdapterHorizontal.DataViewHolder(itemViews);
+
     }
 
     @Override

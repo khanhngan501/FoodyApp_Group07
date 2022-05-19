@@ -1,8 +1,7 @@
 package hcmute.edu.vn.nhom07.foodyapp_group07;
 
 import android.content.Context;
-import android.content.Intent;
-import android.content.res.Resources;
+import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,35 +11,35 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.w3c.dom.Text;
+
 import java.util.List;
 
-public class StoreItemsAdapter extends RecyclerView.Adapter<StoreItemsAdapter.DataViewHolder>{
+public class StoreItemsAdapterHorizontal extends RecyclerView.Adapter<StoreItemsAdapterHorizontal.DataViewHolder>{
 
     private List<StoreItems> storeItems;
     private Context context;
 
-    public StoreItemsAdapter(Context context, List<StoreItems> storeItems) {
+    public StoreItemsAdapterHorizontal(Context context, List<StoreItems> storeItems) {
         this.storeItems = storeItems;
         this.context = context;
     }
 
-
     @NonNull
     @Override
-    public DataViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public StoreItemsAdapterHorizontal.DataViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemViews;
-        itemViews = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycle_food_items, parent, false);
-        return new DataViewHolder(itemViews);
+        itemViews = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_food_items_horizontal, parent, false);
+        return new StoreItemsAdapterHorizontal.DataViewHolder(itemViews);
     }
 
-
     @Override
-    public void onBindViewHolder(@NonNull DataViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull StoreItemsAdapterHorizontal.DataViewHolder holder, int position) {
         String name = storeItems.get(position).getStoreName();
         String img = storeItems.get(position).getStoreImg();
         double rate = storeItems.get(position).getStoreRate();
         int reviews = storeItems.get(position).getStoreReviews();
-        String address = storeItems.get(position).getStoreAddress();
+        Double distance = storeItems.get(position).getStoreDistance();
 
         holder.storeName.setText(name);
 
@@ -49,7 +48,7 @@ public class StoreItemsAdapter extends RecyclerView.Adapter<StoreItemsAdapter.Da
 
         holder.storeRate.setText(String.valueOf(rate));
         holder.storeReviews.setText("(" + String.valueOf(reviews) + "+)");
-        holder.storeAddress.setText(address);
+        holder.storeDistance.setText(String.valueOf(distance) + "km");
     }
 
 
@@ -68,18 +67,15 @@ public class StoreItemsAdapter extends RecyclerView.Adapter<StoreItemsAdapter.Da
         private ImageView storeImg;
         private TextView storeRate;
         private TextView storeReviews;
-        private TextView storeAddress;
+        private TextView storeDistance;
 
         public DataViewHolder(@NonNull View itemView) {
             super(itemView);
-
-            storeName = (TextView) itemView.findViewById(R.id.storeName);
-            storeImg = (ImageView) itemView.findViewById(R.id.store_img);
-            storeRate = (TextView) itemView.findViewById(R.id.store_rate);
-            storeReviews = (TextView) itemView.findViewById(R.id.store_reviews);
-            storeAddress = (TextView) itemView.findViewById(R.id.store_address);
-
-
+            storeName = (TextView) itemView.findViewById(R.id.store_name_h);
+            storeImg = (ImageView) itemView.findViewById(R.id.store_img_h);
+            storeRate = (TextView) itemView.findViewById(R.id.store_rate_h);
+            storeReviews = (TextView) itemView.findViewById(R.id.store_reviews_h);
+            storeDistance = (TextView) itemView.findViewById(R.id.store_distance_h);
         }
     }
 }

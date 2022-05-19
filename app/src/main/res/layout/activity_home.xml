@@ -389,8 +389,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/flame_ic"
+                android:fontFamily="@font/segoeui"
+                android:gravity="left|center"
+                android:padding="5dp"
+                android:text=" Hot Deals"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewStore_Vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
             </androidx.recyclerview.widget.RecyclerView>
+
 
         </LinearLayout>
     </ScrollView>

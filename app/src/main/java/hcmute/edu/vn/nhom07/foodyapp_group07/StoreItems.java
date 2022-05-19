@@ -8,13 +8,17 @@ public class StoreItems implements Serializable {
     private double storeRate;
     private int storeReviews;
     private String storeAddress;
+    private double storeDistance;
+    private boolean isDeal;
 
-    public StoreItems(String storeName, String storeImg, double storeRate, int storeReviews, String storeAddress) {
+    public StoreItems(String storeName, String storeImg, double storeRate, int storeReviews, String storeAddress, double storeDistance, boolean isDeal) {
         this.storeName = storeName;
         this.storeImg = storeImg;
         this.storeRate = storeRate;
         this.storeReviews = storeReviews;
         this.storeAddress = storeAddress;
+        this.storeDistance = storeDistance;
+        this.isDeal = isDeal;
     }
 
     public String getStoreName() {
@@ -55,5 +59,21 @@ public class StoreItems implements Serializable {
 
     public void setStoreAddress(String storeAddress) {
         this.storeAddress = storeAddress;
+    }
+
+    public double getStoreDistance() {
+        return storeDistance;
+    }
+
+    public void setStoreDistance(double storeDistance) {
+        this.storeDistance = storeDistance;
+    }
+
+    public boolean isDeal() {
+        return isDeal;
+    }
+
+    public void setDeal(boolean deal) {
+        isDeal = deal;
     }
 }

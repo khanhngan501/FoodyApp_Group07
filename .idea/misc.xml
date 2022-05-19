@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.121" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/drawable/edt_radius.xml" value="0.165" />
+        <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/drawable/edt_radius_black.xml" value="0.1" />
+        <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/drawable/edt_radius_no_color.xml" value="0.1" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.152" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/drawable/menu_border.xml" value="0.165" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/drawable/signup_activity_btn_gg.xml" value="0.165" />
@@ -17,7 +19,9 @@
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/foodyitems.xml" value="0.4" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/fragment_sign_in.xml" value="0.22916666666666666" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/home_activity.xml" value="0.22916666666666666" />
-        <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/recycle_food_items.xml" value="0.159375" />
+        <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/recycle_food_items.xml" value="0.264" />
+        <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/recycle_food_items_vertical.xml" value="0.5051903114186851" />
+        <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/recycler_food_items_horizontal.xml" value="0.264" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/sign_up_activity.xml" value="0.2" />
         <entry key="..\:/Study/Nam_03/HK02_2020_2021/LapTrinhDiDong/Exercises/GiuaKy/FoodyApp/app/src/main/res/layout/sign_up_page.xml" value="0.17281420765027322" />
       </map>

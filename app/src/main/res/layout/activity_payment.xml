@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rice_menu_background">
+    android:background="@drawable/rice_menu_background"
+    tools:context=".PaymentActivity">
 
     <ImageView
         android:id="@+id/imgBack"
@@ -126,7 +127,7 @@
         android:id="@+id/listViewMonAnTrongGioHang"
         android:layout_width="352dp"
         android:layout_height="218dp"
-        android:layout_marginBottom="225dp"
+        android:layout_marginBottom="220dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -151,7 +152,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="168dp"
         android:layout_marginBottom="168dp"
-        android:text="15000"
+        android:text="15.000đ"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -177,7 +178,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="124dp"
         android:layout_marginTop="23dp"
-        android:text="105000"
+        android:text="105.000đ"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"

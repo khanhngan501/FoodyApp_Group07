@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
         cart_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new  Intent(HomeActivity.this, CartDetailActivity.class);
+                Intent intent = new  Intent(HomeActivity.this, PaymentActivity.class);
                 startActivity(intent);
             }
         });

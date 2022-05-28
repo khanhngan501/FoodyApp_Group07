@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/rice_menu_background">
@@ -69,6 +70,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
+            android:backgroundTint="@color/black"
             android:id="@+id/btnTru"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
@@ -83,7 +85,7 @@
             android:background="#000000"
             android:focusable="false"
             android:text="1"
-            android:textColor="#ffffff"
+            android:textColor="#000000"
             android:textSize="30dp" />
 
         <Button
@@ -91,6 +93,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:focusable="false"
+            android:backgroundTint="@color/black"
             android:text="+"
             android:textSize="30dp" />
     </LinearLayout>
@@ -137,11 +140,11 @@
         android:layout_height="50dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="41dp"
-        android:background="@drawable/btn_order"
         android:drawableStart="@drawable/checkout_ic"
         android:drawablePadding="5dp"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
+        android:backgroundTint="@color/black"
         android:text="Order Now"
         android:textColor="#FFFFFF"
         android:textSize="20sp"

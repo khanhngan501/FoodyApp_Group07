@@ -14,26 +14,39 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class FoodHotDealItemsAdapter extends RecyclerView.Adapter<FoodHotDealItemsAdapter.DataViewHolder>{
+public class ListFoodItemsAdapter extends RecyclerView.Adapter<ListFoodItemsAdapter.DataViewHolder> {
+
     private List<FoodItems> foodItems;
     private Context context;
 
     public static final int TYPE1 = 1;
     public static final int TYPE2 = 0;
 
-    public FoodHotDealItemsAdapter(Context context, List<FoodItems> foodItems) {
+    public ListFoodItemsAdapter(Context context, List<FoodItems> foodItems) {
         this.foodItems = foodItems;
         this.context = context;
     }
 
     @NonNull
     @Override
-    public DataViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemViews = null;
+    public ListFoodItemsAdapter.DataViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View itemViews;
+        itemViews = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_list_deal_food_item, parent, false);
 
-        itemViews = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_hot_food_item, parent, false);
 
-        return new FoodHotDealItemsAdapter.DataViewHolder(itemViews);
+//        switch (viewType) {
+//            case 1:
+//                itemViews = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_list_deal_food_item, parent, false);
+//                break;
+//            case 2:
+//                itemViews = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_list_food_item, parent, false);
+//                break;
+//            default:
+//                itemViews = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_list_food_item, parent, false);
+//                break;
+//        }
+
+        return new ListFoodItemsAdapter.DataViewHolder(itemViews);
     }
 
     @Override
@@ -51,13 +64,13 @@ public class FoodHotDealItemsAdapter extends RecyclerView.Adapter<FoodHotDealIte
         holder.foodNormalPrice.setText(normalPrice);
         holder.foodSalePrice.setText(salePrice);
 
-//        holder.cardViewFoodItem.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(holder.itemView.getContext(), DetailDishActivity.class);
-//                holder.itemView.getContext().startActivity(intent);
-//            }
-//        });
+        holder.cardViewFoodItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(holder.itemView.getContext(), DetailDishActivity.class);
+                holder.itemView.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -67,11 +80,12 @@ public class FoodHotDealItemsAdapter extends RecyclerView.Adapter<FoodHotDealIte
 
     @Override
     public int getItemViewType(int position) {
-        if (foodItems.get(position).getIsDeal()) return TYPE1;
-        else return TYPE2;
+        if (foodItems.get(position).getIsDeal()) return 1;
+        else return 2;
     }
 
-    public class DataViewHolder extends RecyclerView.ViewHolder {
+
+    public static class DataViewHolder extends RecyclerView.ViewHolder {
         private TextView foodName;
         private ImageView foodImg;
         private TextView foodSalePercent;

@@ -1,6 +1,7 @@
 package hcmute.edu.vn.nhom07.foodyapp_group07;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,36 +9,36 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class StoreItemsAdapterVertical extends RecyclerView.Adapter<StoreItemsAdapterVertical.DataViewHolder>{
+public class HotDealStoreItemsAdapter extends RecyclerView.Adapter<HotDealStoreItemsAdapter.DataViewHolder> {
 
     private List<StoreItems> storeItems;
     private Context context;
 
-    public StoreItemsAdapterVertical(Context context, List<StoreItems> storeItems) {
+    public HotDealStoreItemsAdapter(Context context, List<StoreItems> storeItems) {
         this.storeItems = storeItems;
         this.context = context;
     }
 
     @NonNull
     @Override
-    public DataViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public HotDealStoreItemsAdapter.DataViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemViews;
-        itemViews = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycle_food_items_vertical, parent, false);
-        return new DataViewHolder(itemViews);
+        itemViews = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_hot_deal_store_item, parent, false);
+        return new HotDealStoreItemsAdapter.DataViewHolder(itemViews);
+
     }
 
-
     @Override
-    public void onBindViewHolder(@NonNull DataViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull HotDealStoreItemsAdapter.DataViewHolder holder, int position) {
         String name = storeItems.get(position).getStoreName();
         String img = storeItems.get(position).getStoreImg();
         double rate = storeItems.get(position).getStoreRate();
         int reviews = storeItems.get(position).getStoreReviews();
-        String address = storeItems.get(position).getStoreAddress();
         Double distance = storeItems.get(position).getStoreDistance();
 
         holder.storeName.setText(name);
@@ -47,8 +48,15 @@ public class StoreItemsAdapterVertical extends RecyclerView.Adapter<StoreItemsAd
 
         holder.storeRate.setText(String.valueOf(rate));
         holder.storeReviews.setText("(" + String.valueOf(reviews) + "+)");
-        holder.storeAddress.setText(address);
         holder.storeDistance.setText(String.valueOf(distance) + "km");
+
+        holder.cardViewHotFoodItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(holder.itemView.getContext(), StoreDetailActivity.class);
+                holder.itemView.getContext().startActivity(intent);
+            }
+        });
     }
 
 
@@ -67,17 +75,19 @@ public class StoreItemsAdapterVertical extends RecyclerView.Adapter<StoreItemsAd
         private ImageView storeImg;
         private TextView storeRate;
         private TextView storeReviews;
-        private TextView storeAddress;
         private TextView storeDistance;
+        private CardView cardViewHotFoodItem;
 
         public DataViewHolder(@NonNull View itemView) {
             super(itemView);
-            storeName = (TextView) itemView.findViewById(R.id.store_name);
-            storeImg = (ImageView) itemView.findViewById(R.id.store_img);
-            storeRate = (TextView) itemView.findViewById(R.id.store_rate);
-            storeReviews = (TextView) itemView.findViewById(R.id.store_reviews);
-            storeAddress = (TextView) itemView.findViewById(R.id.store_address);
-            storeDistance = (TextView) itemView.findViewById(R.id.store_distance);
+            storeName = (TextView) itemView.findViewById(R.id.store_name_h);
+            storeImg = (ImageView) itemView.findViewById(R.id.store_img_h);
+            storeRate = (TextView) itemView.findViewById(R.id.store_rate_h);
+            storeReviews = (TextView) itemView.findViewById(R.id.store_reviews_h);
+            storeDistance = (TextView) itemView.findViewById(R.id.store_distance_h);
+            cardViewHotFoodItem = (CardView) itemView.findViewById(R.id.cardViewHotFoodItem);
         }
     }
+
+
 }
